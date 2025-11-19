@@ -40,3 +40,12 @@ The following resources can be helpful for data exploration and additional datas
 * **[Boston Region MPO / CTPS website](https://ctps.org/):** The Boston Region Metropolitan Planning Organization (MPO) provides many datasets and interactive [data dashboards](https://ctps.shinyapps.io/pbpp-dashboard-r/?_gl=1*1fx4ohh*_ga*MzI3MTYyNTQyLjE3NTY0Mjg5MTA.*_ga_TVRXRVW1YN*czE3NjM1MTAwNDAkbzEzJGcxJHQxNzYzNTExODUyJGozOSRsMCRoMA..) to assist with transit planning in the region. They also cover many other modes of transportation and their integration with public transit, such as park-and-rides and biking. 
 * **[Bluebikes system data](https://bluebikes.com/system-data):** The leading bikeshare service in Greater Boston.
 * **[MBTA Bus Route Profiles](https://www.mbta.com/projects/better-bus-project/update/bus-route-profiles-now-available):** In 2018, MBTA published detailed reports of each bus route with descriptions and analysis, including scheduled frequencies, ridership, crowding, on-time performance etc. The data is outdated, but a great visual introduction of specific bus routes.
+
+## Python Package Installations
+
+For those who are interested in using the Python code provided in these tutorials, you can install all prerequisite packages via ``pip`` by running these commands in a terminal:
+
+```
+pip install requests numpy pandas us geopandas pygris
+pip install git+https://github.com/GeomaticsCaminosUPM/pyGTFSHandler.git
+```

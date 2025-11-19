@@ -1,24 +1,17 @@
-import requests
-import urllib.parse
-import os
 import copy
-# import json
-# import re
-# import importlib
+import os
 import sys
+import urllib.parse
 
-import pandas as pd
 import numpy as np
-
-# from census import Census
+import pandas as pd
+import requests
 import us
-
 import geopandas as gpd
 import pygris
+from pygris.data import get_census
 from pygris.utils import erase_water
-from pygris.data import get_census, get_lodes
 
-# from datetime import datetime
 
 
 CENSUS_LATEST_YEARS = {

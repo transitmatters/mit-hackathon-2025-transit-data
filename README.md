@@ -47,6 +47,6 @@ For those who are interested in using the Python code provided in these tutorial
 
 ```
 pip install requests numpy pandas us geopandas pygris
-pip install git+https://github.com/CityScope/pyGTFSHandler.git
+pip install "pyGTFSHandler[osm,plot] @ git+https://github.com/CityScope/pyGTFSHandler.git"
 pip install matplotlib mapclassify folium osmnx geopy
 ```

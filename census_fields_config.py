@@ -72,7 +72,7 @@ CENSUS_FIELDS_CATEGORIES = {
             "timeTransit60": ["B08134_070"],
         },
         "fields_universe": {
-            "workersTotal": "B08301_001",  # Workers 16 years and over
+            "default": "B08301_001",  # Workers 16 years and over
             "workersNotHome": "B08303_001",  # Workers 16 years and over who did not work from home
             "time30min": "B08303_001",  # Workers 16 years and over who did not work from home
             "time45min": "B08303_001",  # Workers 16 years and over who did not work from home

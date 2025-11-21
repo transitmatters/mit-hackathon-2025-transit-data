@@ -59,29 +59,28 @@ CENSUS_FIELDS_CATEGORIES = {
             "fromHome": ["B08301_021"],
             "otherModes": ["B08301_016", "B08301_017", "B08301_020"],
 
+            # Fields below require separate settings to define the universe: see fields_universe below
             "workersNotHome": ["B08303_001"],
             "time30min": ["B08303_008", "B08303_009", "B08303_010", "B08303_011", "B08303_012", "B08303_013"],
             "time45min": ["B08303_011", "B08303_012", "B08303_013"],
             "time60min": ["B08303_012", "B08303_013"],
             "time90min": ["B08303_013"],
 
+            # Fields below require separate settings to define the universe: see fields_universe below
             "timeTransit30": ["B08134_067", "B08134_068", "B08134_069", "B08134_070"],
             "timeTransit45": ["B08134_069", "B08134_070"],
             "timeTransit60": ["B08134_070"],
         },
         "fields_universe": {
-            "default": "B08303_001",  # Workers 16 years and over who did not work from home
             "workersTotal": "B08301_001",  # Workers 16 years and over
-            "transit": "B08301_001",
-            "bus": "B08301_001",
-            "rapidTransit": "B08301_001",
-            "commuterRail": "B08301_001",
-            "car": "B08301_001",
-            "walk": "B08301_001",
-            "bike": "B08301_001",
-            "walkBike": "B08301_001",
-            "fromHome": "B08301_001",
-            "otherModes": "B08301_001",
+            "workersNotHome": "B08303_001",  # Workers 16 years and over who did not work from home
+            "time30min": "B08303_001",  # Workers 16 years and over who did not work from home
+            "time45min": "B08303_001",  # Workers 16 years and over who did not work from home
+            "time60min": "B08303_001",  # Workers 16 years and over who did not work from home
+            "time90min": "B08303_001",  # Workers 16 years and over who did not work from home
+            "timeTransit30": "B08303_001",  # Workers 16 years and over who did not work from home
+            "timeTransit45": "B08303_001",  # Workers 16 years and over who did not work from home
+            "timeTransit60": "B08303_001",  # Workers 16 years and over who did not work from home
         }
     },
     "vehicles": {

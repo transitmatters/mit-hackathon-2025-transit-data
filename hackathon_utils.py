@@ -97,8 +97,14 @@ def query_arcgis_feature_server(url_feature_server='', object_id_field="OBJECTID
 
     # Getting all the object IDs
     service_request = requests.get(url_comb)
+    response_json = service_request.json()
+
     # all_objectids = np.sort(service_request.json()['properties']['objectIds'])
-    all_objectids = np.sort(service_request.json()['objectIds'])
+    # all_objectids = np.sort(service_request.json()['objectIds'])
+    if 'objectIds' in response_json.keys():
+        all_objectids = np.sort(service_request.json()['objectIds'])
+    else:
+        all_objectids = np.sort(service_request.json()['properties']['objectIds'])
 
     # This variable will store all the parts of the multiple queries. These
     # parts will, at the end, be concatenated into one large GeoDataFrame.

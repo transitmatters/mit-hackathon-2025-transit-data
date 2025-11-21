@@ -20,6 +20,7 @@ This documentation consists of several subpages, each as a writeup with links to
 * [MBTA network schedules GTFS data](mbta_gtfs_data.ipynb)
 * [MBTA ridership data](mbta_ridership_data.ipynb)
 * [MBTA performance data](mbta_performance_data.ipynb)
+* [Municipalities and MBTA Service Areas](cities_municipalities_service_areas.ipynb)
 * [Quick introduction to GIS, and a sample project that we provide](geospatial_qgis_example.ipynb)
 
 ## Pre-processed Datasets

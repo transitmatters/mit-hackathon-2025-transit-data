@@ -56,7 +56,7 @@ The table below lists the main columns of [``data/demographics.gpkg``](data/demo
 
 The remaining fields are from the [US Census Tiger/Line Shapefiles](https://www.census.gov/programs-surveys/geography/technical-documentation/complete-technical-documentation/tiger-geo-line.2023.html#list-tab-240499709) with documentation [here](https://www2.census.gov/geo/pdfs/maps-data/data/tiger/tgrshp2023/TGRSHP2023_TechDoc.pdf) (Appendix G-2 for block groups, Appendix I-5 for places).
 
-## MBTA Geospatial Files: [``mbta_network.gpkg``](mbta_network.gpkg)
+## MBTA Network Geospatial Files: [``mbta_network.gpkg``](mbta_network.gpkg)
 
 The [``mbta_network.gpkg``](mbta_network.gpkg) file is a collection of external geospatial datasets in 12 layers. The table below gives the source of each layer. Documentations can be found via the **Mass.gov** links.
 
@@ -83,3 +83,16 @@ For details on the data sources above, see [our tutorial on MBTA network data](.
 This is sourced directly from the ["MBTA Rapid Transit Stop Orders"](https://mbta-massdot.opendata.arcgis.com/datasets/e09d680af4a0441eb49ce4ef7b1796eb_0/explore) dataset on MBTA Open Data Portal. It lists, for each rapid transit route, a list of stop names (e.g. ``Wonderland``), stop IDs (e.g. ``place-wondl``), and the integer order of this stop on the line. For some applications, this table is useful for **joining stop data with route data**.
 
 [Full documentation is available at the original data source.](https://mbta-massdot.opendata.arcgis.com/datasets/MassDOT::mbta-rapid-transit-stop-orders/about)
+
+## Municipalities and MBTA Service Areas: [``cities_municipalities_service_areas.gpkg``](cities_municipalities_service_areas.gpkg)
+
+The [``cities_municipalities_service_areas.gpkg``](cities_municipalities_service_areas.gpkg) file is a collection of external geospatial datasets in 4 layers. The table below gives the source of each layer (each of which comes with somewhat limited documentation).
+
+| Layer name | Description and Link to Original Dataset |
+|----|----|----|
+| ``ma_municipalities`` | [Municipalities in Massachusetts](https://gis.data.mass.gov/maps/4b532722f22d43ce9003cb1d118d89cc/explore) |
+| ``boston_neighborhoods`` | [Official neighborhoods in the City of Boston](https://gis.data.mass.gov/datasets/fefd5fb156d9419e80a3944a62bd64ab_1/explore) |
+| ``mbta_core_service_area`` | [Municipalities in the MBTA Core Service Area](https://mbta-massdot.opendata.arcgis.com/datasets/2d7d34175e554ddc9f33c7f0ad6d6872_0/explore) |
+| ``mbta_extended_service_area`` | [Municipalities in MBTA Extended Service Area](https://mbta-massdot.opendata.arcgis.com/datasets/ec170028b45e46cea43dd51bda250237_0/explore) |
+
+For explanations and quick illustrations, see [our information page on municipalities](../cities_municipalities_service_areas.ipynb).

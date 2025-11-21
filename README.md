@@ -46,6 +46,7 @@ The following resources can be helpful for data exploration and additional datas
 For those who are interested in using the Python code provided in these tutorials, you can install all prerequisite packages via ``pip`` by running these commands in a terminal:
 
 ```
-pip install requests numpy pandas us geopandas pygris matplotlib
-pip install git+https://github.com/GeomaticsCaminosUPM/pyGTFSHandler.git
+pip install requests numpy pandas us geopandas pygris
+pip install git+https://github.com/CityScope/pyGTFSHandler.git
+pip install matplotlib mapclassify folium osmnx geopy
 ```
